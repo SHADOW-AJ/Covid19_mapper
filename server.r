@@ -48,13 +48,13 @@ sb$aec=s$Infected[match(sb$st_nm,s$State)]
 sb$tot=s$Total[match(sb$st_nm,s$State)]
 
 s$ac_range=cut(s$Infected,
-               breaks = c(0,10000,100000,200000),right=FALSE,
+               breaks = c(0,10000,100000,max(s$Infected)+10),right=FALSE,
                labels=c("less than 10000","less than 100000","more than 100000"))
 s$re_range=cut(s$Recovered,
-               breaks = c(0,50000,150000,10000000),right=FALSE,
+               breaks = c(0,50000,150000,max(s$Recovered)+10),right=FALSE,
                labels=c("less than 50000","less than 150000","more than 150000"))
 s$de_range=cut(s$Deaths,
-               breaks = c(0,10000,50000,200000),right=FALSE,
+               breaks = c(0,10000,50000,max(s$Deaths)+10),right=FALSE,
                labels=c("less than 10000","less than 50000","more than 50000"))
 
 
