@@ -7,4 +7,4 @@ install_if_missing = function(p) {
 }
 
 invisible(sapply(my_packages, install_if_missing))
-install.packages("/app/localpkgs/Rnlminb2_2110.79.tar.gz", repos=NULL, type="source")
+install.packages("/app/rgdal_1.5-10.tar.gz", repos=NULL, type="source")
