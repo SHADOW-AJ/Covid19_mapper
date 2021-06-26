@@ -1,4 +1,4 @@
-my_packages = c("leaflet", "readr","rjson","ggplot2")
+my_packages = c("leaflet", "readr","rjson","ggplot2","rgdal")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
